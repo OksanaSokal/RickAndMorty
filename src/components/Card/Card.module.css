@@ -1,0 +1,55 @@
+.cardWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1640px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 280px;
+    padding: 20px 30px;
+    box-shadow: 0 7px 25px 0 rgba(100, 100, 111, 0.20);
+    color: #767676;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.card:nth-child(1), .card:nth-child(2) {
+    width: calc(50% - 10px);
+    height: 260px;
+}
+
+.card:nth-child(n+3) {
+    width: calc(33.33% - 13.33px);
+    height: 160px;
+}
+
+.name {
+    font-family: "Fira Sans";
+    font-size: 30px;
+    color: #282626;
+}
+
+.cardStatus {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-family: Montserrat;
+}
+
+.status {
+    font-weight: 700;
+}
+
+.statusAlive {
+    color: #267504;
+}
+
+.statusDead {
+    color: #820A0A;
+}

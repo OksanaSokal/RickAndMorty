@@ -1,0 +1,55 @@
+.main {
+    margin: 130px auto 0;
+    max-width: 626px;
+    width: 100%;
+}
+.main span {
+    margin-left: 40px;
+}
+.input {
+    width: 100%;
+    height: 65px;
+    padding: 20px 0 20px 25px;
+    margin: 0 15px;
+    color: #656EC2;
+    font-size: 22px;
+    font-weight: 700;
+    filter: drop-shadow(0px 7px 12px rgba(100, 100, 111, 0.20));
+    border: none;
+    outline: none;
+}
+
+.input::placeholder{
+    color: #656EC2
+}
+
+.error {
+    color: red;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px dotted  #656EC2;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.loading {
+    height: 67px;
+    display: flex;
+    justify-content: center;
+}
