@@ -1,10 +1,12 @@
-.main {
-    margin: 130px auto 0;
-    max-width: 626px;
+.inputWrapper {
+    margin-top: 130px;
+    padding: 0 15px 0 15px;
+    max-width: 656px;
     width: 100%;
 }
-.main span {
-    margin-left: 40px;
+.inputWrapper span {
+    margin-left: 55px;
+    font-family: 'Montserrat', sans-serif;
 }
 .input {
     width: 100%;
@@ -49,7 +51,24 @@
 
 
 .loading {
-    height: 67px;
+    min-height: 67px;
     display: flex;
     justify-content: center;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .inputWrapper {
+        max-width: 380px;
+    }
+    .input{
+        padding: 15px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .inputWrapper {
+        margin-top: 70px;
+    }
 }

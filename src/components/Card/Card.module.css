@@ -4,13 +4,10 @@
     gap: 20px;
     max-width: 1640px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 20px 15px;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     min-width: 280px;
     padding: 20px 30px;
     box-shadow: 0 7px 25px 0 rgba(100, 100, 111, 0.20);
@@ -26,11 +23,11 @@
 
 .card:nth-child(n+3) {
     width: calc(33.33% - 13.33px);
-    height: 160px;
+    min-height: 150px;
 }
 
 .name {
-    font-family: "Fira Sans";
+    font-family: "Fira Sans", sans-serif;
     font-size: 30px;
     color: #282626;
 }
@@ -39,7 +36,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 14px;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .status {
@@ -53,3 +50,34 @@
 .statusDead {
     color: #820A0A;
 }
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+@media (max-width: 1024px) {
+    .cardStatus {
+        flex-direction: column;
+    }
+    .cardWrapper{
+        justify-content: center;
+    }
+    .card:nth-child(1), .card:nth-child(2) {
+        height: 170px;
+    }
+    .card {
+        padding: 15px 20px;
+    }
+    .name {
+        font-size: 20px;
+    }
+    .cardStatus {
+        font-size: 12px;
+    }
+}
+

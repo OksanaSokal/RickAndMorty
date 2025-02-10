@@ -2,7 +2,7 @@ import {instance} from './instance.ts';
 
 
 export const rickAndMortyApi = {
-    getCharacters(name:string) {
+    searchCharacters(name:string) {
         return instance.get<ResponseType>(`/character?name=${name}`)
     },
 }
@@ -25,7 +25,7 @@ export type CharacterType = {
     status: StatusType
     species: string
     type: string
-    gender: string
+    gender: GenderType
     origin: AdditionalData
     location: AdditionalData
     image: string
@@ -38,5 +38,7 @@ type AdditionalData = {
     name: string
     url: string
 }
+
+type GenderType = 'female' | 'male' | 'genderless' | 'unknown'
 
  export type StatusType = "Alive" | "Dead" | "unknown";

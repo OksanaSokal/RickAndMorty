@@ -1,11 +1,11 @@
 import './App.css'
-import {Main} from './components/Main/Main.tsx'
+import {SearchPage} from './components/SearchPage/SearchPage.tsx'
 
 function App() {
 
   return (
     <>
-        <Main/>
+        <SearchPage/>
     </>
   )
 }
